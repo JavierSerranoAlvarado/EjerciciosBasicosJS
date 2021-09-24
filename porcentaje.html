@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porcentajes y Descuentos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Segundo taller de JavaScript</h1>
+    </header>
+
+    <section>
+      <h2>Calcular el precio a pagar con descuento</h2>
+      <form method="POST">
+        <label for="precio">¿Cual es el precio?</label>
+        <input type="number" id="precio" name="precio" />
+        <label for="descuento">El descuento es de: </label>
+        <input type="number" id="descuento" name="descuento" />
+        <button type="button" onclick="calcularDescuento()">Calcular</button>
+        <label for="cupon">Ingrese el cu´pm: </label>
+        <input type="text" id="cupon" name="cupon" />
+        <button type="button" onclick="calcularPrecioConCupon()">Calcular</button>
+      <p id="resultadoConCupon"></p>
+      </form>
+      <p id="resultadoDescuento"></p>
+    </section>
+
+
+    <script src="./porcentaje.js"></script>
+  </body>
 </html>

@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+#trashFiles
+ECAMSCRIPt.html
+ECAMSCRIPt.js

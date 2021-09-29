@@ -1,0 +1,37 @@
+main{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+main h1{
+    grid-column: 1 / 6 ;
+    align-self: center;
+    justify-self: center;
+}
+
+main input{
+    text-align: center;
+}
+
+.gridForm{
+    display:grid;
+    justify-content: center;
+}
+
+.cuadradoPyA{
+    grid-column: 2 / 3;
+}
+
+.trianguloPyA {
+    grid-column: 3 / 4;
+}
+
+.circuloPyA{
+    grid-column: 4 / 5;
+}
+
+main h3{
+    grid-column: 1 / 6;
+    justify-self: center;
+}

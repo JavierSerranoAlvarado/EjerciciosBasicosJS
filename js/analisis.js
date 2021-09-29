@@ -14,6 +14,7 @@ function promedio(array) {
 //function alinear arrayContado
 function alinearArray(array){
     const salariosPais = array.map((elementos) => elementos.salario);
+    console.log(salariosPais);
     const alinearSalarios = salariosPais.sort((nuevoItem, anteriorItem) => nuevoItem - anteriorItem);
     return alinearSalarios;
 

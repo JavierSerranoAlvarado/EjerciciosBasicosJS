@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5 = 10px;
+}
+body {
+  font-size: 1.6rem = 16px;
+}
+
+nav {
+  width: 100%;
+  padding:1rem;
+  background-color: #efd828;
+  background-image: linear-gradient(180deg, #efd828 0%, #000000 100%);
+  
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav__ul--item {
+  margin-right: 1rem;
+}
+
+.nav__ul--item a {
+  text-decoration: none;
+}
+.nav__ul--item a:visited{
+    color:blue;
+}
+
+.nav__ul--item a:hover {
+    color:white;
+  }

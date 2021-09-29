@@ -4,12 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <link rel="stylesheet" href="./css/figuras.css" type="text/css" />
+    <title>Ejercicios de Figuras Geometricas</title>
   </head>
   <body>
-    <head>
-      <h1>Figuras Geometricas</h1>
-      <form method="POST">
+    <nav>
+      <ul class="nav__ul">
+        <li class="nav__ul--item"><a href="./index.html">Principal</a></li>
+        <li class="nav__ul--item">
+          <a href="./figuras.html">Figuras Geometricas</a>
+        </li>
+        <li class="nav__ul--item"><a href="./promedio.html">Promedio</a></li>
+        <li class="nav__ul--item"><a href="./moda.html">Moda</a></li>
+        <li class="nav__ul--item"><a href="./mediana.html">Mediana</a></li>
+        <li class="nav__ul--item">
+          <a href="./promedio2.html">Promedio Ponderado</a>
+        </li>
+        <li class="nav__ul--item">
+          <a href="./salarios.html">Analisis Salarial</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 >Figuras Geometricas</h1>
+      <form method="POST" class="cuadradoPyA gridForm">
         <h2>Calcular perimetro y area de un cuadrado</h2>
         <label for="cuadradoLadoA">¿Cuanto mide un lado?</label>
         <input type="number" name="cuadradoLadoA" id="cuadradoLadoA" />
@@ -21,7 +42,7 @@
         </button>
       </form>
 
-      <form method="POST">
+      <form method="POST" class="trianguloPyA gridForm">
         <h2>Calcular perimetro y area de un Triangulo</h2>
         <label for="trianguloBase">¿Cuanto mide la base?</label>
         <input type="number" name="trianguloBase" id="trianguloBase" />
@@ -43,7 +64,7 @@
         </button>
       </form>
 
-      <form method="POST">
+      <form method="POST" class="circuloPyA gridForm">
         <h2>Calcular perimetro y area de un Circulo</h2>
         <label for="circuloRadio">¿Cuanto mide el radio?</label>
         <input type="number" name="circuloRadio" id="circuloRadio" />
@@ -55,7 +76,8 @@
           Calcular Area
         </button>
       </form>
-    </head>
-    <script src="./figuras-2.js"></script>
+      <h3 id="resultado">Resultados de las operaciones </h3>
+    </main>
+    <script src="./js/figuras-2.js"></script>
   </body>
 </html>

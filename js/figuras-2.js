@@ -1,4 +1,4 @@
-
+const $resultado = document.querySelector('#resultado')
 //Codigo del cuadrado
 
 // function perimetroCuadrado(lado){
@@ -51,7 +51,8 @@ function calcularPerimetroCuadrado() {
     const valor = input.value;
 
     const perimetro = perimetroCuadrado(valor);
-    alert(perimetro);
+   /*  alert(perimetro); */
+    $resultado.textContent = `El Perimetro del cuadrado es: ${perimetro}`;
 
 }
 
@@ -60,7 +61,8 @@ function calcularAreaCuadrado() {
     const valor = input.value;
 
     const area = areaCuadrado(valor);
-    alert(area);
+    /* alert(area); */
+    $resultado.textContent = `El Area del cuadrado es: ${area}`;
 }
 
 //Funciones del Triangulo
@@ -75,7 +77,8 @@ function calcularPerimetroTriangulo() {
 
 
     const perimetro = perimetroTriangulo(valorA, valorB, valorBase);
-    alert(perimetro);
+    /* alert(perimetro); */
+    $resultado.textContent = `El Perimetro del triangulo es: ${perimetro}`;
 
 }
 
@@ -87,7 +90,8 @@ function calcularAreaTriangulo() {
     const valorBase = parseInt(base.value);
 
     const area = areaTriangulo(valorBase, valorAltura)
-    alert(area);
+    /* alert(area); */
+    $resultado.textContent = `El Area del triangulo es: ${area}`;
 }
 
 function calcularAlturaTriangulo() {
@@ -101,10 +105,12 @@ function calcularAlturaTriangulo() {
 
     if ( ( valorLadoA == valorLadoB ) && ( valorBase != valorLadoA ) ) {
         const altura = Math.sqrt((valorLadoA ** 2) - ((valorBase ** 2) / 4));
-        alert(altura);
+        /* alert(altura); */
+        $resultado.textContent = `La Altura del triangulo es: ${altura}`;
     }
     else {
-        alert("No es un triangulo isoceles");
+        /* alert("No es un triangulo isoceles"); */
+        $resultado.textContent = `No es un triangulo Isoceles`;
     }
 }
 
@@ -113,12 +119,14 @@ function calcularPerimetroCirculo() {
     const radio = document.getElementById("circuloRadio");
     const valorRadio = parseInt(radio.value);
     const perimetro = perimetroCirculo(valorRadio);
-    alert(perimetro);
+    /* alert(perimetro); */
+    $resultado.textContent = `El Perimetro del circulo es: ${perimetro}`;
 }
 
 function calcularAreaCirculo() {
     const radio = document.getElementById("circuloRadio");
     const valorRadio = parseInt(radio.value);
     const area = areaCirculo(valorRadio);
-    alert(area);
+   /*  alert(area); */
+   $resultado.textContent = `El Area del circulo es: ${area}`;
 }

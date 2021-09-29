@@ -1,3 +1,10 @@
+const $inputNumeros = document.querySelector('#numeros');
+const $btnRevisar = document.querySelector('#btnRevisar');
+const $btnReiniciar = document.querySelector('#btnReiniciar')
+const $resultado = document.querySelector('#resultado');
+const $numerosArray = document.querySelector('#arrayNum');
+let arrayNum = []
+
 const lista = [
     100,
     200,
@@ -5,8 +12,6 @@ const lista = [
     400,
     600
 ]
-
-
 
 function calcularPromedio(lista) {
      let sumaLista = 0;
@@ -28,3 +33,25 @@ function calcularPromedio(lista) {
     return promedio;
 
 }
+
+
+/*/////////////////////////////////////////////////////////
+Conectar con HTML
+//////////////////////////////////*/
+
+$btnRevisar.addEventListener('click', ()=>{
+    arrayNum.push(parseInt($inputNumeros.value));
+    $inputNumeros.value = '';
+    $numerosArray.innerHTML = 
+    `Numeros ingresados ${arrayNum.length} <br/>
+    Numeros : ${arrayNum}`;
+    resultado.textContent = `Promedio ${calcularPromedio(arrayNum)}`;
+});
+
+$btnReiniciar.addEventListener('click', () =>{
+    arrayNum = [];
+    $numerosArray.innerHTML = 
+    `Numeros ingresados 0 <br/>
+    Numeros : `;
+    resultado.textContent = `Promedio 0`;
+})

@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller 3 : Moda</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <link rel="stylesheet" href="./css/moda.css" type="text/css" />
+    <title>Taller: Moda</title>
+  </head>
+  <body>
     <nav>
-        <ul class="nav__ul">
-          <li class="nav__ul--item"><a href="./index.html">Principal</a></li>
-          <li class="nav__ul--item"><a href="./figuras.html">Figuras Geometricas</a></li>
-          <li class="nav__ul--item"><a href="./porcentaje.html">Descuentos</a></li>
-          <li class="nav__ul--item"><a href="./promedio.html">Promedio</a></li>
-          <li class="nav__ul--item"><a href="./moda.html">Moda</a></li>
-          <li class="nav__ul--item"><a href="./mediana.html">Mediana</a></li>
-          <li class="nav__ul--item">
-            <a href="./promedio2.html">Promedio Ponderado</a>
-          </li>
-          <li class="nav__ul--item">
-            <a href="./salarios.html">Analisis Salarial</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="nav__ul">
+        <li class="nav__ul--item"><a href="./index.html">Principal</a></li>
+        <li class="nav__ul--item">
+          <a href="./figuras.html">Figuras Geometricas</a>
+        </li>
+        <li class="nav__ul--item">
+          <a href="./porcentaje.html">Descuentos</a>
+        </li>
+        <li class="nav__ul--item"><a href="./promedio.html">Promedio</a></li>
+        <li class="nav__ul--item"><a href="./moda.html">Moda</a></li>
+        <li class="nav__ul--item"><a href="./mediana.html">Mediana</a></li>
+        <li class="nav__ul--item">
+          <a href="./promedio2.html">Promedio Ponderado</a>
+        </li>
+        <li class="nav__ul--item">
+          <a href="./salarios.html">Analisis Salarial</a>
+        </li>
+      </ul>
+    </nav>
     <h1>Moda</h1>
-    
-    <script type="text/javascript" src="moda.js"></script>
-</body>
+    <main>
+      <form method="POST">
+        <h3>Ingresa los numeros separador por una coma (,)</h3>
+        <p>Ejemplo: 1,2,4,1,2,3,4,1,2,5,3,1,2,3</p>
+        <label for="numArray">Numeros: </label>
+        <input type="text" id="numArray" />
+        <button type="button" id="enviar">Revisar Moda</button>
+      </form>
+      <p id="resultado">Resultado</p>
+    </main>
+    <script type="text/javascript" src="./js/moda.js"></script>
+  </body>
 </html>

@@ -20,11 +20,19 @@ const moda = nuevoArray[nuevoArray.length-1];
 console.log(`La moda es ${moda[0]} se repite ${moda[1]} veces`);
 
  */
-function calcularModa(array) {
 
+
+const $btnEnviar = document.querySelector('#enviar');
+const $resultado = document.querySelector('#resultado');
+
+
+
+$btnEnviar.addEventListener("click", () => {
+    const $inputNumbers = document.querySelector("#numArray");
+    const arrayNum = $inputNumbers.value.split(',');
     const nuevoArray = {};
 
-    array.map(function (elemento) {
+    arrayNum.map(function (elemento) {
         if (nuevoArray[elemento]) {
             nuevoArray[elemento] += 1;
         } else {
@@ -37,6 +45,6 @@ function calcularModa(array) {
    
     const moda = arrayObjeto[arrayObjeto.length-1];
 
-    console.log(`La moda es ${moda[0]}`);
-
-}
+    $resultado.textContent = `La moda es ${moda[0]}`;
+    
+})

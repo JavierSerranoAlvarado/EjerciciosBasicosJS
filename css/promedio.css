@@ -8,6 +8,10 @@ h1{
     text-align:center;
 }
 
+main .instruccion{
+     text-align:center;
+}
+
 main p,
 main h3{
     grid-column: 1 / 4;

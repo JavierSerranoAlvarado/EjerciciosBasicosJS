@@ -24,7 +24,7 @@ const cupones = [
 
 
 
-// coenctar con HTML 
+// conectar con HTML 
 
 function calcularDescuento(){
     const precioBox = document.getElementById('precio');
@@ -40,7 +40,7 @@ function calcularDescuento(){
 }
 
 function calcularPrecioConCupon(){
-    const cupon = document.getElementById("cupon");
+    const cupon = document.getElementById("cupones");
     const cuponValor = cupon.value;
 
     const precio = document.getElementById("precio");
@@ -61,8 +61,8 @@ function calcularPrecioConCupon(){
 
         const resultadoP = document.getElementById('resultadoDescuento');
 
-        resultadoP.innerText = "El precio final es de $" + precioFinal +
-        " Usaste el cupon : " + usuarioCupon.id;
+        resultadoP.innerHTML = `El precio final es de $ ${precioFinal}</br>
+                ( Usaste el cupon : "${usuarioCupon.id} ) `;
     }
 
 }

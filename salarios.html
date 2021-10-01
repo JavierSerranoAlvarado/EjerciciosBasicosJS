@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <link rel="stylesheet" href="./css/salarios.css" type="text/css" />
     <title>Salarios</title>
-</head>
-<body>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav__ul">
+        <li class="nav__ul--item btn-grad"><a href="./index.html">Principal</a></li>
+        <li class="nav__ul--item btn-grad"><a href="./figuras.html">Figuras Geometricas</a></li>
+        <li class="nav__ul--item btn-grad"><a href="./porcentaje.html">Descuentos</a></li>
+        <li class="nav__ul--item btn-grad"><a href="./promedio.html">Promedio</a></li>
+        <li class="nav__ul--item btn-grad"><a href="./moda.html">Moda</a></li>
+        <li class="nav__ul--item btn-grad"><a href="./mediana.html">Mediana</a></li>
+        <li class="nav__ul--item btn-grad">
+          <a href="./promedio2.html">Promedio Ponderado</a>
+        </li>
+        <li class="nav__ul--item btn-grad">
+          <a href="./salarios.html">Analisis Salarial</a>
+        </li>
+      </ul>
+    </nav>
     <h1>Analisis de salarios</h1>
-    
-    <script src="salarios.js" ></script>
-    <script type="text/javascript" src="analisis.js"></script>
-</body>
+
+    <main>
+      <form action="" class="alinear">
+        <input id="inputNombre" type="text" />
+        <input id="inputSalario" type="number" />
+        <div class="botonesMediana">
+          <button id="btnAgregar" type="button">Agregar valores</button>
+            <button id="btnAnalizar" type="button">Analizar</button>
+            <button id="btnEjemploAnalizar" type="button">Ejemplo</button>
+        </div>
+        <div class="botonesTop">
+          <button id="btnTop10" type="button">Top10</button>
+          <button id="btnEjemploTop" type="button">Ejemplo</button>
+        </div>
+        <button id="btnReiniciar" type="button">Reiniciar</button>
+      </form>
+
+      <div id="array" class="array alinear">
+        <p>Aquí ira el array</p>
+      </div>
+      <div id="contarArray" class="alinear"></div>
+      <div id="resultado" class="alinear"></div>
+    </main>
+
+    <script src="./js/salarios.js"></script>
+    <script type="text/javascript" src="./js/analisis.js"></script>
+  </body>
 </html>

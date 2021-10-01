@@ -1,4 +1,8 @@
 let mediana;
+const $inputArray = document.querySelector('#numArray');
+const $btnEnviar = document.querySelector('#enviar');
+const $resultado = document.querySelector('#resultado');
+
 
 function esPar(numeroLista){
     if(numeroLista % 2 == 0){
@@ -21,10 +25,19 @@ function calcularMediana(listas){
             listas[mitadLista]
         ]
         mediana = (dosElementos.reduce(function (incremento = 0, nuevo) {return incremento + nuevo}) ) / 2;
-        alert("La mediana es "+ mediana);
+        return `El array ordenado es [ ${listas} ] <br/>La mediana es ${mediana}`;
     } else{
         mediana = listas[mitadLista];
-        alert("La mediana es " + mediana);
+        return `El array ordenado es [ ${listas}  ] <br/> La mediana es ${mediana}`;
     }
 
 }
+
+/*/////////////////////////////////////////////////////////
+Conectar con HTML 
+////////////////////////////////////////// */
+
+$btnEnviar.addEventListener('click', () => {
+    const arrayNum = $inputArray.value.split(',')
+    $resultado.innerHTML = calcularMediana(arrayNum)
+})

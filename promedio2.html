@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <link rel="stylesheet" href="./css/promedio2.css" type="text/css" />
+    <title>Reto: Promedio Ponderado</title>
 </head>
 <body>
-    <script src="promedio-ponderado.js"></script>
+  <nav>
+    <ul class="nav__ul">
+      <li class="nav__ul--item btn-grad"><a href="./index.html">Principal</a></li>
+      <li class="nav__ul--item btn-grad"><a href="./figuras.html">Figuras Geometricas</a></li>
+      <li class="nav__ul--item btn-grad"><a href="./porcentaje.html">Descuentos</a></li>
+      <li class="nav__ul--item btn-grad"><a href="./promedio.html">Promedio</a></li>
+      <li class="nav__ul--item btn-grad"><a href="./moda.html">Moda</a></li>
+      <li class="nav__ul--item btn-grad"><a href="./mediana.html">Mediana</a></li>
+      <li class="nav__ul--item btn-grad">
+        <a href="./promedio2.html">Promedio Ponderado</a>
+      </li>
+      <li class="nav__ul--item btn-grad">
+        <a href="./salarios.html">Analisis Salarial</a>
+      </li>
+    </ul>
+  </nav>
+      <main>
+      <h1>Promedio Ponderado</h1>
+      <form method="POST">
+          <label for="examenes">Numero de Examenes</label>
+          <input type="number" id="examenes">
+          <label for="valor">Valor de Examen</label>
+          <input type="number" id="valor">
+          <div class="botones">
+          <button type="button" id="btnAgregar">Agregar</button>
+          <button type="button" id="btnPromedio">Ver Promedio</button>
+          <button type="button" id="btnReiniciar">Reiniciar</button>
+          </div>
+      </form>
+      <p id="array"></p>
+      <p id="resultado"></p>
+      </main>
+
+    <script src="./js/promedio-ponderado.js"></script>
 </body>
 </html>

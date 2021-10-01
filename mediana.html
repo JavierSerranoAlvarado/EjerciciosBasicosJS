@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <link rel="stylesheet" href="./css/mediana.css" type="text/css" />
     <title>Taller 3 : Mediana</title>
 </head>
 <body>
+  <nav>
+    <ul class="nav__ul">
+      <li class="nav__ul--item btn-grad"><a href="./index.html">Principal</a></li>
+      <li class="nav__ul--item btn-grad"><a href="./figuras.html">Figuras Geometricas</a></li>
+      <li class="nav__ul--item btn-grad"><a href="./porcentaje.html">Descuentos</a></li>
+      <li class="nav__ul--item btn-grad"><a href="./promedio.html">Promedio</a></li>
+      <li class="nav__ul--item btn-grad"><a href="./moda.html">Moda</a></li>
+      <li class="nav__ul--item btn-grad"><a href="./mediana.html">Mediana</a></li>
+      <li class="nav__ul--item btn-grad">
+        <a href="./promedio2.html">Promedio Ponderado</a>
+      </li>
+      <li class="nav__ul--item btn-grad">
+        <a href="./salarios.html">Analisis Salarial</a>
+      </li>
+    </ul>
+  </nav>
     <h1>Mediana</h1>
+    <main>
+        <form method="POST">
+          <h3>Ingresa los numeros separador por una coma (,)</h3>
+          <p>Ejemplo: 1,2,4,1,2,3,4,1,2,5,3,1,2,3</p>
+          <label for="numArray">Numeros: </label>
+          <input type="text" id="numArray" />
+          <button type="button" id="enviar">Revisar Mediana</button>
+        </form>
+        <p id="resultado">Resultado</p>
+      </main>
     
-    <script type="text/javascript" src="mediana.js"></script>
+    <script type="text/javascript" src="./js/mediana.js"></script>
 </body>
 </html>

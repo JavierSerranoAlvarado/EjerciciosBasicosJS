@@ -1,0 +1,45 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:1rem;
+}
+
+main form{
+    display:grid;
+    gap:1rem;
+}
+
+.alinear{
+    grid-column: 2 / 5;
+}
+
+main input{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+main button{
+    padding: 0.4rem;
+}
+
+.botonesMediana{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.botonesTop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.array{
+    grid-column : 2 / 5;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+    padding: 1rem;
+    border: solid;
+}

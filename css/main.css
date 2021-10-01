@@ -8,20 +8,27 @@ html {
 }
 body {
   font-size: 1.6rem = 16px;
+  background-color: #000000;
+  background-image: linear-gradient(180deg, #000000 0%, #fffc00 100%);  
+  background-size: cover ;
+  height: 100vh;
+  color:white;
 }
 
 nav {
   width: 100%;
-  padding:1rem;
-  background-color: #efd828;
-  background-image: linear-gradient(180deg, #efd828 0%, #000000 100%);
-  
+  padding: 1rem;
+  background: linear-gradient(
+    180deg, #b18c00, transparent);
+        border-radius: 0 0 1rem 1rem;
 }
 
 .nav__ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
   list-style: none;
+  font-size: 1.1rem;
 }
 
 .nav__ul--item {
@@ -32,9 +39,31 @@ nav {
   text-decoration: none;
 }
 .nav__ul--item a:visited{
-    color:blue;
+    color:black;
+}
+.nav__ul--item a:hover{
+  color:white;
 }
 
-.nav__ul--item a:hover {
-    color:white;
-  }
+/* 
+.btn-grad {background-image: linear-gradient(to right, #8e9eab 0%, #eef2f3  51%, #8e9eab  100%)}
+
+.btn-grad {
+   padding: 1rem;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;     
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here 
+   color: #fff;
+   text-decoration: none;
+   transform:scale(1);
+ } */
+
+

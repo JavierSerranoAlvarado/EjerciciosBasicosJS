@@ -1,3 +1,4 @@
+let pais = [];
 const mexico = [
     {
         nombre: "javier",

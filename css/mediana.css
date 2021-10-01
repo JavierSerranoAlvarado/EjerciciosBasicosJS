@@ -1,0 +1,43 @@
+main{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    gap: 1rem;
+}
+
+h1{
+    text-align: center;
+}
+
+main form{
+    grid-column: 2 / 5;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:1rem
+}
+
+main form h3,
+main form p{
+    grid-column: 1 / 6;
+    font-size: 1.2rem;
+}
+main label{
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+main input{
+    padding:1rem;
+}
+
+main button{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+
+
+main #resultado{
+    grid-column: 2 / 5;
+    font-size: 1.2rem;
+}

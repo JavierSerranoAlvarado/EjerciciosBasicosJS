@@ -1,0 +1,102 @@
+body {
+  font-size: 1.6rem = 16px;
+  background-color: #000000;
+  background-image: linear-gradient(180deg, #000000 0%, #fffc00 100%);
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+nav{
+    background: none;
+
+}
+
+.nav__ul {
+  display: grid;
+  height: 100%;
+  list-style: none;
+  font-size: 1.1rem;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.nav__ul li {
+  background: rgba(0, 0, 0, 0.356);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  transform: scale(0.8);
+  transition: 450ms all ease;
+  font-size: 2rem;
+}
+
+.nav__ul li:hover {
+  transform: scale(1);
+  background: #fffc00;
+  color: #000;
+}
+
+.nav__ul li:hover i{
+    animation: tarjeta 1s infinite backwards;
+    color:black;
+}
+
+.nav__ul li:hover i:hover{
+    color:black;
+}
+
+@keyframes tarjeta{
+    0%{
+        transform: rotateY(0);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(359deg);
+    }
+
+}
+
+.nav__ul--item a:visited,
+.nav__ul--item a {
+    color: white;
+}
+
+.nav__ul--item a:hover {
+     color: black;
+}
+
+.nav__ul li:nth-child(1) {
+  grid-column: 2 / 3;
+}
+.nav__ul li:nth-child(5) {
+  grid-column: 2 / 3;
+}
+
+nav {
+  grid-row: 2 / 3;
+}
+
+footer {
+  grid-row: 3 / 4;
+  justify-self: end;
+}
+
+footer i {
+  font-size: 3rem;
+  margin: 1rem;
+  transition: 450ms all ease;
+  color:white;
+}
+
+footer i:hover {
+  color: black;
+  cursor: pointer;
+  transform: rotate(360deg);
+}
